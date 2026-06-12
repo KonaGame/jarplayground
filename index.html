@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheerpJ JAR Java Playground</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cjrtnc.leaningtech.com/4.3/loader.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>CheerpJ JAR Playground</h1>
+        <div class="controls">
+            <label for="javaVersion">Java Version:</label>
+            <select id="javaVersion">
+                <option value="8">Java 8 (LTS)</option>
+                <option value="11">Java 11 (LTS)</option>
+                <option value="17">Java 17 (Preview)</option>
+            </select>
+            
+            <label class="file-upload" for="jarFile">
+                Select JAR File
+            </label>
+            <input type="file" id="jarFile" accept=".jar">
+            
+            <span id="status">Ready</span>
+        </div>
+    </header>
+
+    <main>
+        <div id="container">
+            <div id="placeholder">Upload a JAR file to start execution</div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
